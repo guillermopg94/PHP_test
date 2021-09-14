@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--ESTO ES UN COMENTARIO DE HTML -->
+    <?php
+
+echo "exemple de html";
+
+
+/* 
+PRACTICA 2
+1. <?php ?>
+2. echo print 
+3. .php
+4. para hacer comentarios
+5. al final de cada instruccion
+
+PRACTICA 3
+
+-el head contiene el title
+-falta cerrar php
+- ; al final de los echo
+
+PRACTICA 4
+
+Se declara variable dia y se inicializa con una funcion date diciendole 
+que solo queremos el parametro d que es el dia.
+
+Hay un bucle condicional donde cuando el dia sea menor 
+o igual a 10 se imprima "lloc actiu" y si no
+imprime "lloc fora de servici"
+
+PRACTICA 5
+
+1. $ delante
+2. lletres, nombres, barrabaja
+3. si
+4. el = es per asignar y el ; es para cerrar una orden
+
+
+PRACTICA 6 
+
+1. no tiene el signo de dolar
+2. tiene un espacio entre dolar y la palabra
+3. tiene el $ detras de la palabra
+4. la palabra tiene espacios
+5. Esta bien 
+
+PRACTICA 7 
+*/
+function aniversari(){
+
+    $edat = 1;
+
+}
+
+$edat = 30;
+aniversari();
+echo $edat;
+
+// PRACTICA 8
+
+function aniversario (){
+    global $edad;
+    $edad = 1;
+}
+$edat = 30;
+aniversari();
+echo $edat;
+
+// PRACTICA 9
+
+function edad(){
+    $edad;
+$edad = $edad + 1;
+echo $edad;
+}
+$edad = 30;
+edad();
+edad();
+echo $edad;
+
+// PRACTICA 10
+
+$num1 = 1;
+$num2 = 2;
+
+function sumarNumeros($num, $num2){
+
+    $suma = $num1 + $num2;
+    return $suma;
+}
+
+$llamarFuncion = sumarNumeros($num1, $num2);
+
+echo "La suma de "+ $num1 + " + " + $num2 + "es: " + $llamarFuncion;
+    ?>
+</body>
+</html>
