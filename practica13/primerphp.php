@@ -18,6 +18,7 @@ $apellido=Paton;
     <p> <a href="primerphp.php?nombre=<?php echo $nombre;?>&apellido=<?php echo $apellido;?>">enlace isset</a> </p>
 
     <?php
+     //en este if se comprueba si la variable nombre existe
     if (isset($_GET["nombre"])){
         //Recoger las variables nombre y apellidos con $_GET
         echo $_GET["nombre"];
