@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <?php
+    $asignaturas = [
+        "php" => 14,
+        "js" => 4,
+        "html" => 7,
+        "fol" => 10
+    ];
+
+    echo $asignaturas["php"];
+
+    $asignaturas2 = [
+        "php" => 14,
+        "js" => 4,
+        "html" => 7,
+        "fol" => 10,
+        "empresa" => 10,
+        "diw" => 10,
+        "ingles" => "hello"
+
+    ];
+
+    $result = ksort($asignaturas2);
+    foreach ($asignaturas2 as $x => $x_value) {
+        echo "Key=" . $x . ", Value=" . $x_value;
+        echo "<br>";
+    }
+
+    echo "<br>";
+
+    $result1 = array_diff_assoc($asignaturas2, $asignaturas);
+    print_r($result1);
+
+    ?>
+</body>
+
+</html>
