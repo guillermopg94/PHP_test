@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <?php
+    /*
+    1. Mostra per pantalla si dos arrays indexats creats per tu són iguals.
+    2. Mostra per pantalla si dos arrays associatius creats per tu són iguals.
+    3. Ordena un array de nº creat per tu i mostra’ls per pantalla.
+    4.
+    Crea un array de nº aleatoris no repetits entre sí y mostra’ls per pantalla.
+    5.
+    Comproba si un número introduït per formulari és un palindrom.
+    6.
+    Inserta elementos en un array siguiendo los siguientes pasos:
+    a. 
+    Crea un array vacío.
+    b.
+    Asigna un número a una variable que servirá de número de posiciones delarray.c.
+    Dado ese número de posiciones, inserta en el array un número aleatorio del 1 al 9.
+    d.
+    Al final, cuando ya se haya rellenado el array con X posiciones,
+    muestra lasuma de todos sus elementos.
+    7.
+    Crea un array indexado y sigue los siguientes pasos:
+    a. 
+    Recorre el array y mientras haya elementos en este,
+    muestra el valor donde seencuentra el puntero.
+    b.
+    Cuando el puntero llegue al final, muestra un echo con el valor del últimoelemento.
+    c.
+    Haz que el puntero vuelva al principio mostrando los valores donde seencuentra el
+    puntero en cada momento.
+    NOTA: Utiliza las funciones current, next, prev y sizeof, 
+    o cualquier otra que consideres.*/
+
+    $deportes = array("nike", "adidas", "puma", "reebok", "vans", "decathlon");
+    $deportes1 = array("nike", "adidas", "puma", "reebok", "vans", "decathlon");
+    if($deportes  ==  $deportes1){
+
+        echo "Son iguales";
+
+    } else {
+
+        echo "No son iguales";
+
+    }
+
+
+// ejercicio 3
+    $num = array(5, 2, 4, 1, 3, 6);
+
+   sort($num);
+    for ($i = 0; $i <  count($num); $i++) {
+        echo "<br>";
+        echo $num[$i];
+        
+    }
+
+
+
+
+
+    ?>
+</body>
+
+</html>
