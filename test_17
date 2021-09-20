@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <?php
+
+
+    $deportes = array("nike", "adidas", "puma", "reebok", "vans", "decathlon");
+
+    $firstElement = $deportes[0];
+    echo "The first element of the array is $firstElement.";
+    echo "<br>";
+
+    $deportes2 = array("nike", "adidas", "puma", "reebok", "vans", "decathlon");
+
+    $lastElement = $deportes2[count($deportes2) - 1];
+    echo "The last element of the array is $lastElement.";
+
+    $result = array_intersect($deportes, $deportes2);
+    print_r($result);
+
+
+    ?>
+
+
+</body>
+
+</html>
