@@ -1,7 +1,8 @@
 <?php
+//esto se metera en un require
 session_start();
-if ($_SESSION["Usuario"] == "") {
-    header("Location: login.php");
+if (!isset ($_SESSION["Usuario"])) {
+    header("Location: index.php");
 }
 $hoy = date('d-m-Y');
 echo ("<br>");
